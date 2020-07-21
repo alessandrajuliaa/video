@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vídeo</title>
+        <style>
+            #container{
+                width: 640px;
+                height: 360px;
+                position: relative;
+            }
+            #video1{
+                width: 100%;
+            }
+            #controle{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0%;
+                text-align: center;
+                opacity: 0;
+            }
+            #controle:hover{
+                opacity: 1;
+            }
+            .btn{
+                position: relative;
+                top: 100%;
+                transform: translateY(-100%);
+                width: 50px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <video id="video1" src="./video/VITINHO - Sem Perceber (Ao Vivo) Feat. Pixote.mp4"></video>
+            <div id="controle">
+                <img onclick="voltar()" class="btn" src="./img/btn_15_Backward.svg" alt="Voltar">
+                <img onclick="avancar()" class="btn" src="./img/btn_15_Forward.svg" alt="Avançar">
+                <img onclick="diminuirVel()" class="btn" src="./img/btn_Menos.svg" alt="Diminuir velocidade">
+                <img onclick="aumentarVel()" class="btn" src="./img/btn_Mais.svg" alt="Aumentar velocidade">
+                <img onclick="play()" class="btn" src="./img/btn_Play.svg" alt="Play">
+                <img onclick="stop()" class="btn" src="./img/btn_Stop.svg" alt="Stop">
+
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
